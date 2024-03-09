@@ -8,12 +8,12 @@
     ],
     "routes": [
         {
-            "src": "/(.*)",
-            "dest": "./index.js"
-        },
-        {
             "src": "/api/v1/course/(.*)",
             "dest": "./routes/Course.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "./index.js"
         }
     ]
 }
