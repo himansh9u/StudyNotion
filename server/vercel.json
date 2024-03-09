@@ -19,7 +19,7 @@
                 "OPTIONS"
             ],
             "headers": {
-                "Access-Control-Allow-Origin": "https://study-notion-interface.vercel.app/"
+                "Access-Control-Allow-Origin": "*"
             }
         }
     ]
