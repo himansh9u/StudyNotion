@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import IconBtn from "../../../common/IconBtn";
 import { FiUpload } from "react-icons/fi"
 import { useDispatch, useSelector } from "react-redux";
-import { updateDisplayPicture } from "../../../../services/operations/SettingsAPI";
+import { updateDisplayPicture } from "../../../../services/operations/settingsAPI";
 import { toast } from "react-hot-toast";
 
 const changeProfilePicture = () => {

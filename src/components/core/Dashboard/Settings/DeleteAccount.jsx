@@ -2,7 +2,7 @@ import React from "react";
 import { FiTrash2 } from "react-icons/fi";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { deleteProfile } from "../../../../services/operations/SettingsAPI";
+import { deleteProfile } from "../../../../services/operations/settingsAPI";
 
 const DeleteAccount = () => {
     const { token } = useSelector((state) => state.auth);

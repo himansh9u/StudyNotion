@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { changePassword } from "../../../../services/operations/SettingsAPI";
+import { changePassword } from "../../../../services/operations/settingsAPI";
 import IconBtn from "../../../common/IconBtn";
 
 const UpdatePassword = () => {
