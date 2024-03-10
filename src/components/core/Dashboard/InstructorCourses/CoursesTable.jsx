@@ -56,8 +56,9 @@ export default function CoursesTable({ courses, setCourses }) {
                     {courses?.length === 0 ? (
                         <Tr>
                             <Td className="py-10 text-center text-2xl font-medium text-richblack-100">
-                                No courses found
-                                {/* TODO: Need to change this state */}
+                                <div className="h-[calc(100vh-22.5rem)] grid flex-1 place-items-center">
+                                    <div className="spinner"></div>
+                                </div>
                             </Td>
                         </Tr>
                     ) : (
