@@ -13,7 +13,7 @@ const RenderCartCourses = () => {
             {cart.map((course, index) => (
                 <div
                     key={course._id}
-                    className={`flex w-full flex-wrap items-start justify-between gap-6 ${
+                    className={`xl:flex w-full items-start justify-between xl:space-y-0 space-y-6 gap-6 ${
                         index !== cart.length - 1 &&
                         "border-b border-b-richblack-400 pb-6"
                     } ${index !== 0 && "mt-6"} `}
@@ -47,7 +47,7 @@ const RenderCartCourses = () => {
                             </div>
                         </div>
                     </div>
-                    <div className=" flex flex-col space-y-2">
+                    <div className="flex flex-col space-y-2 w-fit">
                         <button
                             onClick={() => dispatch(removeFromCart(course._id))}
                             className="flex items-center gap-x-1 rounded-md border border-richblack-600 bg-richblack-700 py-3 px-[12px] text-pink-200"
