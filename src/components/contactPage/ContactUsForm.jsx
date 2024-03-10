@@ -3,6 +3,7 @@ import CountryCode from "../../data/countrycode.json";
 import { useForm } from "react-hook-form";
 import { contactusEndpoint } from "../../services/apis";
 import { apiConnector } from "../../services/apiconnector";
+import {toast} from "react-hot-toast";
 
 const ContactUsForm = () => {
     const [loading, setLoading] = useState(false);
@@ -21,11 +22,12 @@ const ContactUsForm = () => {
                 contactusEndpoint.CONTACT_US_API,
                 data
             );
-            // const response = {status:"OK"};
             console.log("Logging response", response);
+            toast.success("Mail sent to you successfully")
             setLoading(false);
         } catch (error) {
             console.log("Error:", error.message);
+            toast.success(error.message);
             setLoading(false);
         }
     };
